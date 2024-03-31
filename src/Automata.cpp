@@ -2,7 +2,6 @@
 #include <map>
 #include <string>
 #include<iostream>
-using namespace std;
 
 Automata::Automata() {
     cash = 0;
@@ -36,7 +35,7 @@ void Automata::etMenu() {
     cout << "\n      Menu" << endl;
     if (state == Wait or state == Accept) {
         for (int i = 0; i < 3; i++) 
-            cout <<i+1<<") "<< menu[i] << " -- " << prices[i] << endl;
+            std::cout <<i+1<<") "<< menu[i] << " -- " << prices[i] << endl;
 	}
 }
 
