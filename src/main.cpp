@@ -1,3 +1,4 @@
+// "Copyright [year] <Copyright Owner>"
 #include "Automata.h"
 #include <iostream>
 
