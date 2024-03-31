@@ -36,7 +36,7 @@ void Automata::etMenu() {
     std::cout << "\n      Menu" << std::endl;
     if (state == Wait || state == Accept) {
         for (int i = 0; i < 3; i++)
-            std::cout << i+1 << ") " << menu[i] << " -- " << prices[i] << std::endl;
+          std::cout << i+1 << ")" << menu[i] << "-" << prices[i] << std::endl;
         }
 }
 
