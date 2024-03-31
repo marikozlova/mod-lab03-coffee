@@ -24,7 +24,7 @@ TEST(AutomataTest, test2) {
 TEST(AutomataTest, test3) {
     Automata Machine;
     Machine.on();
-    Machine.off()
+    Machine.off();
     EXPECT_EQ(Off, Machine.check(1));
 }
 
@@ -56,7 +56,7 @@ TEST(AutomataTest, test7) {
     Automata Machine;
     Machine.on();
     Machine.coin(200);
-    Machine.choice(3)
+    Machine.choice(3);
     EXPECT_EQ(false, Machine.check(3));
 }
 
