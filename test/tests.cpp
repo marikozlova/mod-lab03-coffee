@@ -4,8 +4,8 @@
 #include "Automata.h"
 
 class AutomataTest : public testing::Test {
-protected:
-    Automata Machine;
+    protected:
+        Automata Machine;
 };
 
 TEST(AutomataTest, test1) {
