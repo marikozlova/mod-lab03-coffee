@@ -32,10 +32,10 @@ void Automata::coin(int money) {
 }
 
 void Automata::etMenu() {
-    cout << "\n      Menu" << endl;
+    std::cout << "\n      Menu" << std::endl;
     if (state == Wait or state == Accept) {
         for (int i = 0; i < 3; i++) 
-            std::cout <<i+1<<") "<< menu[i] << " -- " << prices[i] << endl;
+            std::cout <<i+1<<") "<< menu[i] << " -- " << prices[i] << std::endl;
 	}
 }
 
