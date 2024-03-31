@@ -1,3 +1,4 @@
+//"Copyright [year] <Copyright Owner>"
 #include "Automata.h"
 #include <map>
 #include <string>
@@ -14,7 +15,7 @@ Automata::Automata() {
     prices[2] = 200;
 }
 
-Automata::~Automata() {};
+Automata::~Automata() {}
 
 void Automata::on() {
     state = Wait;
@@ -25,7 +26,7 @@ void Automata::off() {
 }
 
 void Automata::coin(int money) {
-    if (state == Wait or state == Accept) {
+    if (state == Wait || state == Accept) {
         cash += money;
         state = Accept;
     }
@@ -33,10 +34,10 @@ void Automata::coin(int money) {
 
 void Automata::etMenu() {
     std::cout << "\n      Menu" << std::endl;
-    if (state == Wait or state == Accept) {
-        for (int i = 0; i < 3; i++) 
-            std::cout <<i+1<<") "<< menu[i] << " -- " << prices[i] << std::endl;
-	}
+    if (state == Wait || state == Accept) {
+        for (int i = 0; i < 3; i++)
+            std::cout << i+1 << ") " << menu[i] << " -- " << prices[i] << std::endl;
+        }
 }
 
 states Automata::getState() {
@@ -63,7 +64,6 @@ void Automata::cook(int number) {
     state = Cook;
     cash -= prices[number-1];
     finish(number-1);
-
 }
 
 void Automata::finish(int number) {
