@@ -1,5 +1,4 @@
-// Copyright 2022 GHA Test Team
-
+// "Copyright [year] <Copyright Owner>"
 #include <gtest/gtest.h>
 #include "Automata.h"
 
