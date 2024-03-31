@@ -2,14 +2,13 @@
 #define INCLUDE_AUTOMATA_H_
 #include <map>
 #include <string>
-using namespace std;
 
 enum states {Off, Wait, Accept, Check, Cook};
 
 class Automata {
 private:
     int cash;
-    string menu[3];
+    std::string menu[3];
     int prices[3];
     states state;
 
@@ -27,7 +26,7 @@ public:
     void cook(int number);
     void finish(int number);
 };
-#endif
+#endif  // INCLUDE_AUTOMATA_H_
 
 
 
